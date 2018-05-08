@@ -1,0 +1,23 @@
+{
+  "name": "wildwebsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "\u001b[D\u001bhtml)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yakovina/wildwebsite.git"
+  },
+  "author": "sasha.yakovina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yakovina/wildwebsite/issues"
+  },
+  "homepage": "https://github.com/yakovina/wildwebsite#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
