@@ -5,12 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <div class="welcome">
     <header class="header">
         <div class="container">
-            <div class="logo"></div>
-            <nav class="navigation">
+            <div class="menu__wrapper">
+                    <a href="#" class="logo_anh"><img src="img/WILDLOgo.png" alt="logo"></a>
+                 <nav class="navigation">
                 <ul>
                     <li class="navigation__item"><a href="#">home</a></li>
                     <li class="navigation__item"><a href="#">about</a></li>
@@ -18,19 +22,21 @@
                     <li class="navigation__item"><a href="#">journal</a></li>
                     <li class="navigation__item"><a href="#">contact</a></li>
                 </ul>
-            </nav>
+                </nav>
             <div class="search">
-
+                    <input type="search">
             </div>
+        </div>
         </div>
     </header>
     <section class="mainscreen">
-        <div class="mainscreen__wrapper">
+        <div class="mainscreen__wrapper whiteheader">
             <p class="mainscreen__text">let your life be an</p>
             <h2 class="mainscreen__header">ADVENTURE</h2>
             <a href="#" class="mainscreen__button button">Get inspired</a>
         </div>
     </section>
+    </div>
     <section class="impressive">
         <div class="container container-small">
                 <h2 class="title">
@@ -94,32 +100,249 @@
             <div class="owl-carousel slider">
                     <div class="slide">
                         <img src="" alt="" class="slide__pic">
-                        <address class="slide__author"></address>
-                        <time class="slide__data"></time>
+                        <h4 class="slide__author">Foam</h4>
+                        <time datetime="2015-11-09" class="slide__data">Nov 9, 2015</time>
                     </div>
                     <div class="slide">
                         <img src="" alt="" class="slide__pic">
-                        <address class="slide__author"></address>
-                        <time class="slide__data"></time>
+                        <h4 class="slide__author">Pontneddfechan Waterfalls</h4>
+                        <time datetime="2015-10-17" class="slide__data">Oct 17, 2015</time>
                     </div>
                     <div class="slide">
                         <img src="" alt="" class="slide__pic">
-                        <address class="slide__author"></address>
-                        <time class="slide__data"></time>
+                        <h4 class="slide__author">Mocean</h4>
+                        <time datetime="2015-10-02" class="slide__data">Oct 2, 2015</time>
                     </div>
                     <div class="slide">
                         <img src="" alt="" class="slide__pic">
-                        <address class="slide__author"></address>
-                        <time class="slide__data"></time>
+                        <h4 class="slide__author">Freshwater West</h4>
+                        <time datetime="2015-09-13" class="slide__data">Sep 13, 2015</time>
                     </div>
                     <div class="slide">
                         <img src="" alt="" class="slide__pic">
-                        <address class="slide__author"></address>
-                        <time class="slide__data"></time>
+                        <h4 class="slide__author">Beautiful Light</h4>
+                        <time datetime="2015-03-20" class="slide__data">Mar 20, 2015</time>
                     </div>
                 </div>        
         </div>
+        <a href="#" class="nextpage">Explore gallery</a>
     </section>
+    <section class="journal">
+        <div class="container">
+            <h2 class="title">jour-<br>nal</h2>
+            <div class="crosses">
+            </div>
+            <div class="triangle">
 
+            </div>
+            <div class="mountain">
+
+            </div>
+            <div class="numberofcat">
+
+            </div>
+            <a href="#" class="nextpage journal__newpage">shared stories</a>
+        </div>
+        <div class="journal__header">
+            <h3>
+                weekly topics
+            </h3>
+            <p>
+                Written by people like you
+            </p>
+        </div>
+        <div class="articles">
+            <article class="article__item">
+                <h4 class="article__header">The Summit</h4>
+                <blockquote class="article__text">
+                        You only live once. A phrase adopted and since-overused by popular culture, it is actually rooted in truth. You should always be pushing your boundaries, striving for your most difficult goals, and scaring yourself every day with something new.
+                </blockquote>
+                <div class="author">
+                    <div class="author__wrapper">
+                        <img src="" alt="author" class="author__image">
+                    </div>
+                    <address class="author__name">
+                            Filip Osklen
+                    </address>
+                </div>
+            </article>
+            <article class="article__item">
+                <h4 class="article__header">Other Worldly</h4>
+                <blockquote class="article__text">
+                        It’s rainy today; the fire in the stove is burning brightly. The house enfolds me in its lustrous timber walls with their fine scent of wood. It’s doing me good to be in Leis. I am just sitting here, quite still, looking.
+                </blockquote>
+                <div class="author">
+                    <div class="author__wrapper">
+                        <img src="" alt="author" class="author__image">
+                    </div>
+                    <address class="author__name">
+                            Rachel Robert
+                    </address>
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="daybyday">
+        <div class="container">
+            <div class="section-left">
+                <div class="video__wrapper">
+                        <video class="video"width="400" height="300" controls="controls" poster="video/duel.jpg">
+                            <source src="video/duel.ogv" type='video/ogg; codecs="theora, vorbis"'>
+                            <source src="video/duel.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+                            <source src="video/duel.webm" type='video/webm; codecs="vp8, vorbis"'>
+                            Тег video не поддерживается вашим браузером. 
+                            <a href="video/duel.mp4">Скачайте видео</a>.
+                           </video>
+                           <a href="" class="vigeo__anch">watch the release video</a>
+                </div>
+
+            </div>
+            <div class="section-right">
+                <div class="section-left">
+                        <article class="article__item">
+                                <h4 class="article__header daybyday__header">day by day</h4>
+                                <span class="daybyday__notes">
+                                        Adventure
+                                </span>
+                                <blockquote class="article__text">
+                                        With all the outstanding images and stories shared daily by our community, we wanted to create something that would let you tap into those reserves of inspiration.
+                                </blockquote>
+                                <div class="author">
+                                    <div class="author__wrapper">
+                                        <img src="" alt="author" class="author__image">
+                                    </div>
+                                    <address class="author__name">
+                                            Dana Galicia
+                                    </address>
+                                </div>
+                            </article>
+                </div>
+                <div class="section-right">
+                    <h4 class="daybyday__header">let others see the beauty of the world captured by your eyes</h4>
+                    <span class="daybyday_notes">
+                            Be part of the community.
+                    </span>
+                    <a href="#" class="daybyday__button button">Join us</a>
+                </div>
+            </div>
+            <div class="section-left">
+                    <h4 class="article__header daybyday__header">featured stories</h4>
+                    <div class="stories">
+                        <a href="" class="stories__item">
+                            <div class="stories__picture">
+                                <img src="" alt="">
+                            </div>
+                            <h5 class="stories__header">Photography</h5>
+                            <p class="stories__text">
+                                        A night to remember
+                            </p>
+                            <address class="stories__author">by Dana Galicia</address>
+                            
+                        </a>
+                        <a href="" class="stories__item">
+                            <div class="stories__picture">
+                                <img src="" alt="">
+                            </div>
+                            <h5 class="stories__header">Video</h5>
+                            <p class="stories__text">
+                                    Little shots of happiness
+                            </p>
+                            <address class="stories__author">by Leanne Whitney</address>
+                        </a>
+                        <a href="" class="stories__item">
+                            <div class="stories__picture">
+                                <img src="" alt="">
+                            </div>
+                            <h5 class="stories__header">Exposition</h5>
+                            <p class="stories__text">
+                                    Nocturna
+                            </p>
+                            <address class="stories__author">by Jake Verow</address>
+                        </a>
+                    </div>
+            </div>
+            <div class="section-right">
+                    <div class="place whiteheader">
+                            <p class="place__text">the story of each</p>
+                            <h2 class="place__header">place</h2>
+                            <a href="#" class="mainscreen__button button">explore</a>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h2 class="title">con-<br>tact</h2>
+            <div class="circle"></div>
+            <div class="section__left">
+
+                    <div class="section__left">
+                        <h3>GET IN TOUCH</h3>
+                        <span>We’re here for you</span>
+                   
+                        <div class="circle circlenumbers">
+                            3,146
+                        </div>
+                        <span>923 Video Makers</span>
+                        <span>1.622 Photographers</span>
+                        <span>601 Motion Designers</span>
+                    </div>
+                    <div class="section__right">
+                        <img src="" alt="" class="contact__img">
+                    </div>
+            </div>
+            <div class="section__right">
+                    <form action="" class="form">
+                            <div class="form__field"><input type="text" placeholder="Your name is?" class="input"></div>
+                            <div class="form__field"><input type="email" placeholder="Email" class="input"></div>
+                            <div class="form__field"><textarea name="text" placeholder="message"class="input input__textarea"></textarea></div>
+                            <button class="button form__button">say hello</button>
+                    </form>
+            </div>
+    </section>
+    <div class="endmenu">
+        <div class="section__left">
+            <!--wildsvg-->
+        </div>
+        <div class="section__right">
+            <div class="endmenu__wrapper">
+                <nav class="endmenu__item">
+                    <h3 class="endmenu__header">learn more</h3>
+                    <ul>
+                        <li class="endmenu__li"><a href="">Tour</a></li>
+                        <li class="endmenu__li"><a href="">Customers</a></li>
+                        <li class="endmenu__li"><a href="">Pricing & Plans</a></li>
+                        <li class="endmenu__li"><a href="">New Features</a></li>
+                        <li class="endmenu__li"><a href="">Education</a></li>
+                    </ul>
+                </nav>
+                <nav class="endmenu__item">
+                    <h3 class="endmenu__header">about</h3>
+                    <ul>
+                        <li class="endmenu__li"><a href="">The Project</a></li>
+                        <li class="endmenu__li"><a href="">Media</a></li>
+                        <li class="endmenu__li"><a href="">Kit</a></li>
+                        <li class="endmenu__li"><a href="">Jobs</a></li>
+                        <li class="endmenu__li"><a href="">Blog</a></li>
+                    </ul>
+                </nav>
+                <nav class="endmenu__item">
+                    <h3 class="endmenu__header">support</h3>
+                    <ul>
+                        <li class="endmenu__li"><a href="">Help Center</a></li>
+                        <li class="endmenu__li"><a href="">Terms of Service</a></li>
+                        <li class="endmenu__li"><a href="">Security</a></li>
+                        <li class="endmenu__li"><a href="">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <address>© All rights reserved, 2015</address>
+        <div class="social">
+
+        </div>
+    </footer>
 </body>
 </html>
