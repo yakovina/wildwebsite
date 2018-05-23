@@ -1,0 +1,60 @@
+@include font-face(ProximaNova, "../fonts/ProximaNova-Regular", 400, normal, woff);
+@include font-face(ProximaNova, "../fonts/ProximaNova-Light", 300, normal, woff);
+@include font-face(ProximaNova, "../fonts/ProximaNova-Bold", 500, normal, woff);
+@include font-face(GothamPro-Black, "../fonts/GothamPro-Black", 400, normal, woff);
+$fontgray: #4e4e4e;
+$whitecolor: #ffffff;
+html
+    font-size: 10px
+    font-family:    ProximaNova, sans-serif
+.container
+    margin: 0 5rem
+    position: relative
+p
+    color: $fontgray
+
+.section
+    margin-top: -300px
+    position: relative
+    padding-top: 15rem
+.separator
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+
+.title
+    font-size: 10rem
+    text-transform: uppercase
+    margin: 0
+    padding: 0
+    font-weight: 400
+    line-height: 0.8
+    color: $fontgray
+    &:before
+        background: url(../img/img_divider.png) no-repeat
+        display: block
+        height: 7rem
+        content: "";
+.mainscreen__wrapper
+    .title
+        &:before
+            height: 4rem
+
+.author
+    display: flex
+    align-items: center
+    &__wrapper
+        border-radius: 50%
+        width: 60px
+        height: 60px
+        margin-right: 1.5rem
+    &__name
+        font-weight: 300
+        font-size: 2rem
+        font-style: normal
+
+.dflex
+    display: flex
+.nextpage
+    position: absolute

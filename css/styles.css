@@ -1,5 +1,34 @@
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ProximaNova-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/ProximaNova-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "ProximaNova";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/ProximaNova-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "GothamPro-Black";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/GothamPro-Black.woff") format("woff");
+}
+
 html {
   font-size: 10px;
+  font-family: ProximaNova, sans-serif;
 }
 
 .container {
@@ -7,11 +36,76 @@ html {
   position: relative;
 }
 
+p {
+  color: #4e4e4e;
+}
+
+.section {
+  margin-top: -300px;
+  position: relative;
+  padding-top: 15rem;
+}
+
+.separator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.title {
+  font-size: 10rem;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  line-height: 0.8;
+  color: #4e4e4e;
+}
+
+.title:before {
+  background: url(../img/img_divider.png) no-repeat;
+  display: block;
+  height: 7rem;
+  content: "";
+}
+
+.mainscreen__wrapper .title:before {
+  height: 4rem;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.author__wrapper {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 1.5rem;
+}
+
+.author__name {
+  font-weight: 300;
+  font-size: 2rem;
+  font-style: normal;
+}
+
+.dflex {
+  display: flex;
+}
+
+.nextpage {
+  position: absolute;
+}
+
 .welcome {
   background: url(../img/advent_backg.jpg);
   background-position: 50% 50%;
   background-size: cover;
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 30rem;
 }
 
 .menu__wrapper {
@@ -20,14 +114,31 @@ html {
   width: 100%;
   background-color: #ffffff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 3.5rem;
+  box-sizing: border-box;
+}
+
+.menu__wrapper .search {
+  margin: 0;
+  margin-left: 3.5rem;
+}
+
+.menu__wrapper .search i {
+  font-size: 3rem;
+  color: #c1b2b1;
+}
+
+.menu__wrapper .search input {
+  width: 0;
+  border: none;
 }
 
 .navigation {
+  margin-left: auto;
   display: flex;
   align-content: center;
+  width: 50%;
 }
 
 .navigation__item {
@@ -42,7 +153,7 @@ html {
   font-size: 1.6rem;
   text-transform: uppercase;
   letter-spacing: 0.16rem;
-  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
   color: #c1b2b1;
   padding: 0;
   margin: 0;
@@ -51,4 +162,104 @@ html {
 .navigation ul {
   display: flex;
   align-content: center;
+  justify-content: space-between;
+  padding: 0;
+  width: 100%;
+}
+
+.whiteheader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.whiteheader a {
+  text-decoration: none;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 2.5rem 5rem;
+  margin: 2.5rem 5rem;
+  font-size: 2.5rem;
+}
+
+.mainscreen__header {
+  margin-bottom: 4rem;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+}
+
+.mainscreen__text {
+  color: #ffffff;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: .3em;
+  margin-bottom: 1rem;
+}
+
+.impressive__text {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.impressive .circle {
+  width: 10%;
+  margin-left: auto;
+}
+
+.impressive .circle img {
+  margin-top: 8rem;
+  width: 100%;
+}
+
+.impressive__wrapper {
+  z-index: 2;
+}
+
+.impressive__images {
+  position: relative;
+  z-index: 0;
+  margin-left: -8rem;
+  display: flex;
+  margin-top: -11rem;
+  width: 70%;
+}
+
+.img__wrapper {
+  width: 41%;
+  height: 40%;
+  overflow: hidden;
+  position: relative;
+  border: 1rem solid #ffffff;
+  margin: 1rem;
+}
+
+.section__left {
+  width: 40%;
+}
+
+.section__left .img__wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+.img__wrapper img {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.impressive__images .section__right {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  margin-left: 4rem;
 }

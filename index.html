@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>WildWebsite</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <link rel="stylesheet" href="css/normalise.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -25,6 +26,8 @@
                 </nav>
             <div class="search">
                     <input type="search">
+                    <i class="fas fa-search"></i>
+                    <!--поменять иконку-->
             </div>
         </div>
         </div>
@@ -32,34 +35,45 @@
     <section class="mainscreen">
         <div class="mainscreen__wrapper whiteheader">
             <p class="mainscreen__text">let your life be an</p>
-            <h2 class="mainscreen__header">ADVENTURE</h2>
+            <h2 class="mainscreen__header title">ADVENTURE</h2>
             <a href="#" class="mainscreen__button button">Get inspired</a>
         </div>
     </section>
     </div>
-    <section class="impressive">
-        <div class="container container-small">
+    <section class="section impressive">
+        <div class="separator">
+                    <svg class="separator__svg" width="100%" height="300" viewBox="0 0 100 100" preserveAspectRatio="none" stroke="#ffffff" fill="#ffffff" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M 0,0 L 100,100 L0,100"/>
+                      </svg>
+                  </div>
+        <div class="container container-small dflex">
+                <div class="impressive__wrapper">
                 <h2 class="title">
                         impres-<br>
                         sive
                 </h2>
-                <p class="impressive_text">Shots of the week.</p>
+                <p class="impressive__text">Shots of the week.</p>
                 <div class="author">
                     <div class="author__wrapper">
-                        <img src="" alt="author" class="author__image">
+                        <img src="img/jonatanbean.png" alt="author" class="author__image">
                     </div>
                     <address class="author__name">
                             by Jonathan Bean
                     </address>
                 </div>
+                </div>
                 <div class="impressive__images">
-                    <div class="impressive__wrapper"><img src="" alt="" class="impressive__img impressive__img-big"></div>
-                    <div class="impressive__wrapper"><img src="" alt="" class="impressive__img"></div>
-                    <div class="impressive__wrapper"><img src="" alt="" class="impressive__img"></div>
-                    <div class="impressive__wrapper"><img src="" alt="" class="impressive__img"></div>
-                    <div class="impressive__wrapper"><img src="" alt="" class="impressive__img"></div>
+                    <div class="section__left">
+                        <div class="img__wrapper"><img src="img/impressive1.jpg" alt="" class="impressive__img impressive__img-big"></div></div>
+                    <div class="section__right">
+                        <div class="img__wrapper"><img src="img/impressive2.jpg" alt="" class="impressive__img"></div>
+                        <div class="img__wrapper"><img src="img/impressive3.jpg" alt="" class="impressive__img"></div>
+                        <div class="img__wrapper"><img src="img/impressive4.jpg" alt="" class="impressive__img"></div>
+                        <div class="img__wrapper"><img src="img/impressive5.jpg" alt="" class="impressive__img"></div>
+                </div>
                 </div>
                 <div class="circle">
+                    <img src="img/img_floating_circle.png" alt="circle">
                 </div>
                 <a href="#" class="nextpage">See all</a>
         </div>
