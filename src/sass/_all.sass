@@ -4,6 +4,7 @@
 @include font-face(GothamPro-Black, "../fonts/GothamPro-Black", 400, normal, woff);
 $fontgray: #4e4e4e;
 $whitecolor: #ffffff;
+$bluecolor: #98b8f6;
 html
     font-size: 10px
     font-family:    ProximaNova, sans-serif
@@ -14,7 +15,7 @@ p
     color: $fontgray
 
 .section
-    margin-top: -300px
+    margin-top: 5rem
     position: relative
     padding-top: 15rem
 .separator
@@ -58,3 +59,21 @@ p
     display: flex
 .nextpage
     position: absolute
+    bottom: -4rem
+    right: 10%
+    text-decoration: none
+    font-weight: 400
+    font-size: 2.5rem
+    color: $bluecolor
+    i
+        margin-left: 2rem
+
+.textual
+    font-weight: 300
+    padding-bottom: 1rem
+    font-size: 3rem
+
+.textual-big
+    font-size: 4rem
+    padding: 2rem 0
+    font-weight: 400
