@@ -151,6 +151,15 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.button {
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  padding: 2.5rem 5rem;
+  margin: 2.5rem 5rem;
+  font-size: 2.5rem;
+}
+
 .welcome {
   background: url(../img/advent_backg.jpg);
   background-position: 50% 50%;
@@ -491,4 +500,126 @@ p {
 .daybyday {
   box-shadow: 0px -20px 300px 300px black;
   position: relative;
+  z-index: 0;
+}
+
+.daybyday .container {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 5rem;
+}
+
+.section-left {
+  width: 50%;
+}
+
+.section-left .video__wrapper {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.section-left .video__wrapper img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.section-left .video__text {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  color: #ffffff;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.section-left .video__text .play {
+  margin-right: 2rem;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  height: 7rem;
+  width: 7rem;
+  box-sizing: border-box;
+  background: url(../img/play.png) no-repeat;
+  background-position: 55% 50%;
+}
+
+.section-right {
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.section-right .button {
+  color: #4e4e4e;
+  border: 1px solid #4e4e4e;
+  font-weight: 500;
+  margin: 0;
+  padding: 2rem 4rem;
+  font-size: 1.5rem;
+}
+
+.section-right .article__item {
+  padding: 0 5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.section-right .article__item .article__header, .section-right .article__item .daybyday__header {
+  margin: 0;
+  color: #518da3;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.section-right .article__item .article__text {
+  margin-top: 6rem;
+  margin-left: -2rem;
+  height: 10rem;
+}
+
+.section-right .article__item .author {
+  margin: 5rem 0;
+}
+
+.daybyday__header {
+  margin: 0;
+  color: #518da3;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.daybyday__notes {
+  font-weight: 400;
+  font-size: 2rem;
+  color: #98b8f6;
+}
+
+.daybyday__notes-comun {
+  margin: 3rem 0;
+}
+
+.contact {
+  position: relative;
+  background-color: #ffffff;
+  padding-top: 20rem;
+  margin-top: 0;
+}
+
+.contact .circle {
+  position: absolute;
+  top: 0;
+  right: 30%;
 }

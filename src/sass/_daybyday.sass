@@ -1,0 +1,89 @@
+.daybyday .container
+    display: flex
+    flex-wrap: wrap
+    padding-top: 5rem
+
+
+.section-left
+    width: 50%
+    .video__wrapper
+        width: 100%
+        height: 100%
+        overflow: hidden
+        position: relative
+        img
+            position: absolute
+            top: 50%
+            left: 50%
+            transform: translate(-50%,-50%)
+            min-height: 100%
+            min-width: 100%
+    .video__text        
+        position: absolute
+        top: 10%
+        left: 10%
+        color: $whitecolor
+        z-index: 1
+        text-transform: uppercase
+        font-size: 1.5rem
+        font-weight: 500
+        display: flex
+        align-items: center
+        .play
+            margin-right: 2rem
+            border: 1px solid $whitecolor
+            border-radius: 50%
+            height: 7rem
+            width: 7rem
+            box-sizing: border-box
+            background: url(../img/play.png) no-repeat
+            background-position: 55% 50%
+            
+.section-right
+    width: 50%
+    display: flex
+    flex-wrap: wrap
+    align-content: flex-start
+    .button
+        color: $fontgray
+        border: 1px solid $fontgray
+        font-weight: 500
+        margin: 0
+        padding: 2rem 4rem
+        font-size: 1.5rem
+    .article__item
+        padding: 0 5rem
+        width: 100%
+        box-sizing: border-box
+        .article__header, .daybyday__header
+            margin: 0
+            color: $darkbluecolor
+            text-transform: uppercase
+            font-weight: 500
+            font-size: 3rem
+        .article__text
+            margin-top: 6rem
+            margin-left: -2rem
+            height: 10rem
+
+        .author
+            margin: 5rem 0
+        .section-right
+
+.daybyday__header
+    margin: 0
+    color: $darkbluecolor
+    text-transform: uppercase
+    font-weight: 500
+    font-size: 3rem
+
+.daybyday__notes
+    font-weight: 400
+    font-size: 2rem
+    color: $bluecolor
+
+.daybyday__notes-comun
+    margin: 3rem 0
+
+
+    
