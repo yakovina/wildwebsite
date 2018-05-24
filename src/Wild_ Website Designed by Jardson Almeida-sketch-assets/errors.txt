@@ -1,0 +1,1 @@
+[2018-05-24 11:52:26] layer "ic_g+": Expected end of input but "+" found.

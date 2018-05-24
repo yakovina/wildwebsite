@@ -64,7 +64,7 @@ p {
 }
 
 .title:before {
-  background: url(../img/img_divider.png) no-repeat;
+  background: url(../img/header-before.png) no-repeat;
   display: block;
   height: 7rem;
   content: "";
@@ -84,6 +84,17 @@ p {
   width: 60px;
   height: 60px;
   margin-right: 1.5rem;
+  position: relative;
+}
+
+.author__wrapper img {
+  position: absolute;
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .author__name {
@@ -120,6 +131,24 @@ p {
   font-size: 4rem;
   padding: 2rem 0;
   font-weight: 400;
+}
+
+.img__wrapper {
+  overflow: hidden;
+  position: relative;
+  border: 1rem solid #ffffff;
+  margin: 1rem;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+}
+
+.img__wrapper img {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .welcome {
@@ -209,7 +238,7 @@ p {
 }
 
 .mainscreen__header {
-  margin-bottom: 4rem;
+  margin-bottom: 8rem;
   color: #ffffff;
   letter-spacing: 0.2em;
 }
@@ -223,27 +252,17 @@ p {
   margin-bottom: 1rem;
 }
 
-.impressive__text {
-  font-weight: 500;
-  font-size: 3rem;
-}
-
 .impressive {
   margin-top: -300px;
 }
 
-.impressive .circle {
-  width: 10%;
-  margin-left: auto;
-}
-
-.impressive .circle img {
-  margin-top: 8rem;
-  width: 100%;
-}
-
 .impressive__wrapper {
   z-index: 2;
+}
+
+.impressive__text {
+  font-weight: 500;
+  font-size: 3rem;
 }
 
 .impressive__images {
@@ -255,14 +274,9 @@ p {
   width: 70%;
 }
 
-.img__wrapper {
+.impressive__images .img__wrapper {
   width: 40%;
   height: 40%;
-  overflow: hidden;
-  position: relative;
-  border: 1rem solid #ffffff;
-  margin: 1rem;
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 .section__left {
@@ -274,21 +288,22 @@ p {
   width: 100%;
 }
 
-.img__wrapper img {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.impressive__images .section__right {
+.section__right {
   width: 50%;
   display: flex;
   flex-wrap: wrap;
   align-content: flex-start;
   margin-left: 4rem;
+}
+
+.circle {
+  width: 10%;
+  margin-left: auto;
+}
+
+.circle img {
+  margin-top: 8rem;
+  width: 100%;
 }
 
 .about__wrapper {
@@ -313,32 +328,167 @@ p {
   margin-bottom: 20rem;
 }
 
+.gallery .img__wrapper {
+  height: 40rem;
+  margin-right: 40px;
+  width: 30rem;
+  height: 40rem;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.gallery .img__wrapper img {
+  top: 0;
+  left: 0;
+  height: 60%;
+  min-height: 60%;
+  transform: none;
+}
+
+.gallery .img__wrapper h4 {
+  position: absolute;
+  bottom: 0;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.gallery .img__wrapper time {
+  position: absolute;
+  bottom: 0;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
 .slider {
   display: flex;
-}
-
-.slide {
+  margin-top: 3rem;
   position: relative;
-  border: 1rem solid #ffffff;
-  width: 23%;
-  height: 27rem;
-  margin-right: 2rem;
-}
-
-.slide__pic {
-  position: absolute;
-  min-width: 100%;
-  height: 70%;
 }
 
 .journal {
+  margin-top: 35rem;
   background: url(../img/journal.jpg) no-repeat;
   background-position: 50% 50%;
   background-size: cover;
   position: relative;
-  height: 100vh;
+  min-height: calc(100vh + 20rem);
+  color: #ffffff;
+  padding-bottom: 12rem;
 }
 
 .journal .title {
   margin-top: -23rem;
+}
+
+.journal .crosses {
+  position: absolute;
+  top: -10rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.journal .triangle {
+  position: absolute;
+  top: 25%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+}
+
+.journal__newpage {
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+  letter-spacing: 0.3em;
+  right: 2rem;
+  bottom: 2rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.journal__newpage i {
+  margin-left: 0.5rem;
+}
+
+.journal__header {
+  margin-top: 100px;
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+  z-index: 2;
+}
+
+.journal__header h3 {
+  font-size: 5rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.journal__header p {
+  font-size: 2rem;
+  color: #9c9c9c;
+}
+
+.article {
+  display: flex;
+  position: relative;
+  z-index: 2;
+}
+
+.article__item {
+  width: 35%;
+}
+
+.article__header {
+  font-weight: 400;
+  font-size: 2.5rem;
+}
+
+.article__text {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin: 0;
+  padding-left: 2rem;
+  width: 100%;
+  position: relative;
+  color: #9c9c9c;
+  height: 10rem;
+  overflow: hidden;
+}
+
+.article__text:before {
+  position: absolute;
+  top: 0;
+  left: 0rem;
+  display: block;
+  width: 1px;
+  height: 4rem;
+  background-color: #9c9c9c;
+  content: "";
+}
+
+.article .author {
+  margin: 0 auto;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.img_devider {
+  background: url(../img/img_divider.png) no-repeat;
+  width: 20%;
+  background-position: 50% 50%;
+}
+
+.numberofcat {
+  position: relative;
+  margin-top: 10rem;
+  font-size: 30rem;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: right;
+  width: 90%;
+}
+
+.daybyday {
+  box-shadow: 0px -20px 300px 300px black;
+  position: relative;
 }
